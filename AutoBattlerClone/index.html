@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "Game"> 
+        <div id = "MainWindow"> 
+        <canvas width = "550" height="650" id="Canvas" background-color = "red"></canvas>
+
+        </div>
+        <button id = "DEBUGBUT" onclick = "DebugAddEnemies()"> START NEXT ROUND</button>
+        <button id = "HEALTH" > HEALTH: 100</button>
+        <div id = "TraitList"></div> 
+        <button onclick="Debug()" id = "GOLD" > GOLD: 1</button>
+        <div id = "Shop">
+            <p id = "Level"> LEVEL: 0 </p>
+            <div id = "ShopBody">
+                <button onmouseover="ShowBig(this)" onclick = "InstansiateUnit(this.id)" id = "but1">ADD UNIT</button>
+                <button onmouseover="ShowBig(this)" onclick = "InstansiateUnit(this.id)" id = "but2">ADD UNIT</button>
+                <button onmouseover="ShowBig(this)" onclick = "InstansiateUnit(this.id)" id = "but3">ADD UNIT</button>
+                <button onmouseover="ShowBig(this)" onclick = "InstansiateUnit(this.id)" id = "but4">ADD UNIT</button>
+                <button onmouseover="ShowBig(this)" onclick = "InstansiateUnit(this.id)" id = "but5">ADD UNIT</button>
+                <button onclick = "LevelUp()" id = "levelBut">LEVEL</button>
+                <button onclick = "RefreshButtons(false)" id = "refreshBut">REFRESH</button>
+                <div id = "Hover"></div>
+            </div>
+        </div>
+    </div>
+    <script src = "map.js"></script>
+    <script src = "renderer.js"></script>
+    <script src = "Modules/Components/Components.js"></script>
+    <script src = "Units/Warrior.js"></script>
+    <script src = "Units/Puppeteer.js"></script>
+    <script src = "Units/Magikarp.js"></script>
+    <script src = "Units/Bloodmancer.js"></script>
+    <script src = "Units/ShieldMaiden.js"></script>
+    <script src = "main.js"></script>
+
+
+
+</body>
